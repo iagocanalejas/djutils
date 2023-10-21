@@ -62,8 +62,8 @@ class EditableMixin:
         :param force_update: avoid 'is_editable' check
         """
         if not force_insert and not force_update and not self.is_editable:
-            raise ValidationError({"non_field_errors": _("Non editable: {name}".format(name=self.__str__()))})
+            raise ValidationError({"non_field_errors": _(f"Non editable: {self.__str__()}")})
 
     def delete(self):
         if not self.is_editable:
-            raise ValidationError({"non_field_errors": _("Non editable: {name}".format(name=self.__str__()))})
+            raise ValidationError({"non_field_errors": _(f"Non editable: {self.__str__()}")})

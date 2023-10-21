@@ -28,13 +28,13 @@ class DatableQuerySet(QuerySet):
         if date:
             params[self.model.schedule_by] = date.date() if isinstance(date, datetime) else date
         if day:
-            params["{}__day".format(self.model.schedule_by)] = day
+            params[f"{self.model.schedule_by}__day"] = day
         if week:
-            params["{}__week".format(self.model.schedule_by)] = week
+            params[f"{self.model.schedule_by}__week"] = week
         if month:
-            params["{}__month".format(self.model.schedule_by)] = month
+            params[f"{self.model.schedule_by}__month"] = month
         if year:
-            params["{}__year".format(self.model.schedule_by)] = year
+            params[f"{self.model.schedule_by}__year"] = year
 
         return self.filter(**params)
 
