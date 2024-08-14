@@ -1,1 +1,1 @@
-from .weighted import WeightedItem, WeightedList  # pyright: ignore
+from .weighted import WeightedItem as WeightedItem, WeightedList as WeightedList

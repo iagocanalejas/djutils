@@ -1,9 +1,9 @@
-from .eager import EagerSerializer  # pyright: ignore
+from .eager import EagerSerializer as EagerSerializer
 from .media import (
-    ImageSerializer,  # pyright: ignore
-    ImageListSerializer,  # pyright: ignore
-    ImageThumbnailSerializer,  # pyright: ignore
-    VideoListSerializer,  # pyright: ignore
+    ImageSerializer as ImageSerializer,
+    ImageListSerializer as ImageListSerializer,
+    ImageThumbnailSerializer as ImageThumbnailSerializer,
+    VideoListSerializer as VideoListSerializer,
 )
-from .natural import NaturalKeyRelatedField  # pyright: ignore
-from .period import WeekYearSerializer, PeriodSerializer  # pyright: ignore
+from .natural import NaturalKeyRelatedField as NaturalKeyRelatedField
+from .period import WeekYearSerializer as WeekYearSerializer, PeriodSerializer as PeriodSerializer

@@ -1,1 +1,1 @@
-from .bank import BICFormField, IBANFormField  # pyright: ignore
+from .bank import BICFormField as BICFormField, IBANFormField as IBANFormField
